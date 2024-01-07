@@ -1,4 +1,4 @@
-# Landmark Technologies  = Kubernetes Deployment
+# Nfesta Technologies  = Kubernetes Deployment
 
 ## Topics
 1. Create Deployment
