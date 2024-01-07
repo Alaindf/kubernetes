@@ -5,7 +5,7 @@
 #
 
 resource "aws_iam_role" "demo-node" {
-  name = "eks-landmark-node"
+  name = "eks-nfesta-node"
 
   assume_role_policy = <<POLICY
 {
