@@ -1,5 +1,5 @@
 
-# Landmark Technologies == Kubernetes Ingress
+# Nfesta Technologies == Kubernetes Ingress
 # What is the Ingress in kubernetes?
 
 The Ingress is a Kubernetes resource that lets you configure an HTTP load balancer for applications running on Kubernetes, represented by one or more [Services](https://kubernetes.io/docs/concepts/services-networking/service/). Such a load balancer is necessary to deliver those applications to clients outside of the Kubernetes cluster. It also provides SSL Termination and SSL Redirect for HTTPS.
@@ -180,11 +180,11 @@ spec:
 
 ### Generate self signed certificates
 ```
- openssl req -x509 -nodes -days 365 -newkey rsa:2048 -out mylandmark-ingress-tls.crt -keyout mylandmark-ingress-tls.key -subj "/CN=javawebapp.javawebapp.landmarkfintech.com/O=mylandmark-ingress-tls"
+ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -out nfestatech-ingress-tls.crt -keyout nfestatech-ingress-tls.key -subj "/CN=javawebapp.javawebapp.nfestatech.com/O=nfestatech-ingress-tls"
 
 # Create secret for with your certificate .key & .crt file
 
- kubectl create secret tls mylandmark-ingress-tls --namespace default --key mylandmark-ingress-tls.key --cert mylandmark-ingress-tls.crt
+ kubectl create secret tls nfestatech-ingress-tls --namespace default --key nfestatech-ingress-tls.key --cert nfestatech-ingress-tls.crt
 ```
 ### Mention tls/ssl(certificate) details in ingress
 ```
@@ -195,11 +195,11 @@ metadata:
 spec:
   tls:
   - hosts:
-    - app.landmarkfintech.com
-    secretName: mylandmarktech-ingress-tls
+    - app.nfestatech.com
+    secretName: nfestatech-ingress-tls
   ingressClassName: nginx
   rules:
-  - host: app.landmarkfintech.com
+  - host: app.nfestatech.com
     http:
       paths:
       - backend:
@@ -213,8 +213,8 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: landmarkfintech.com
-    secretName: mylandmarktech-ingress-tls
+  - host: nfestatech.com
+    secretName: nfestatech-ingress-tls
     http:
       paths:
       # Default Path(/)
@@ -229,8 +229,4 @@ spec:
         backend:
           serviceName: javawebapp
           servicePort: 80
-```
-
-### Alternatively Deploy Ingress in kubernetes using Manifest Files
-https://github.com/LandmakTechnology/kubernestes-ingress
 ```
