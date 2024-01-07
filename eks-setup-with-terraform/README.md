@@ -1,9 +1,9 @@
-#  **<span style="color:green">Landmark Technologies, Ontario, Canada.</span>**
-### **<span style="color:green">Contacts: +1437 215 2483<br> WebSite : <http://mylandmarktech.com/></span>**
-### **Email: mylandmarktech@gmail.com**
-# Landmark Technologies,  -    Landmark Technologies 
-# Tel: +1 437 215 2483,   -     +1 437 215 2483 
-#    www.mylandmarktech.com 
+#  **<span style="color:green">Nfesta Technologies, Clinton, Maryland.</span>**
+### **<span style="color:green">Contacts: +1240 636 8212<br> WebSite : <http://nfestatech.com/></span>**
+### **Email: nfestatech@gmail.com**
+# nfesta Technologies,  -    nfesta Technologies 
+# Tel: +1 240 636 8212,   -     +1 240 636 8212 
+#    www.mynfestatech.com 
 # Terraform Installation And Setup In AWS EC2 Linux Instances
 #  Using Terraform to provision a fully managed Amazon EKS Cluster
 
@@ -24,7 +24,7 @@ sudo echo "eksadmin  ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/eksadmin
 sudo su - eksadmin
 ```
 ``` sh
-$ git clone https://github.com/mylandmarktechs/eks-terraform-setup
+$ git clone https://github.com/nfestaclass02/eks-terraform-setup
 $ cd eks-terraform-setup
 # install terraform using a bash shell script
 $ sh terraform-install.sh
@@ -38,7 +38,7 @@ $ vi .bashrc
    export PATH="$PATH:/usr/local/bin"
 # Source .bashrc to reflect for current session
 $ source ~/.bashrc  
-# run the scripts https://github.com/mylandmarktechs/eks-terraform-setup/blob/main/terraform-install.sh
+# run the scripts https://github.com/nfestaclass02/eks-terraform-setup/blob/main/terraform-install.sh
 
 $ sudo yum install wget unzip -y
 $ wget https://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.26_linux_amd64.zip
@@ -50,11 +50,11 @@ $ vi .bashrc
    export PATH="$PATH:/usr/local/bin"
 # Source .bashrc to reflect for current session
  source ~/.bashrc  
-# run the scripts https://github.com/mylandmarktechs/eks-terraform-setup/blob/main/terraform-install.sh
+# run the scripts https://github.com/nfestaclass02/eks-terraform-setup/blob/main/terraform-install.sh
 ```
 #### Clone terraform scripts
 ``` sh
-$ git clone https://github.com/mylandmarktechs/eks-terraform-setup
+$ git clone https://github.com/nfestaclass02/eks-terraform-setup
 $ cd eks-terraform-setup
 ```
 #### <span style="color:orange">Update Your Key Name in variables.tf file before executing terraform script.</span>
