@@ -32,7 +32,7 @@ Setup Kubernetes (K8s) Cluster on AWS Using KOPS
  sudo curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
  sudo chmod +x ./kubectl
  sudo mv ./kubectl /usr/local/bin/kubectl
- aws s3 mb s3://nubonglegah.k8.local
+ aws s3 mb s3://nfestabucket.k8.local
  aws s3 ls
 
 5) Create an IAM role from Consloe or CLI with below Policies.
@@ -50,12 +50,12 @@ You Created. --> Save.
 
 6) create an S3 bucket Execute below commond in KOPS Server use unique bucket name if you get bucket name exists error.
 
-	aws s3 mb s3://nubonglegah.k8.local
+	aws s3 mb s3://nfestabucket.k8.local
 	aws s3 ls
 	
     ex:
 	# S3 bucket name should be unique across AWS
-	aws s3 mb s3://simonlegah.k8s.local    s3://nubong.k8s.local
+	aws s3 mb s3://festusnkeng.k8s.local    s3://nkeng.k8s.local
      
 	Expose environment variable:
 
@@ -63,8 +63,8 @@ You Created. --> Save.
     vi .bashrc
 	
 	# Give Unique Name And S3 Bucket which you created.
-	export NAME=s3://legah2045.k8.local
-	export KOPS_STATE_STORE=s3://legah2045.k8.local
+	export NAME=s3://festus84.k8.local
+	export KOPS_STATE_STORE=s3://festus84.k8.local
  
     source .bashrc
 	
