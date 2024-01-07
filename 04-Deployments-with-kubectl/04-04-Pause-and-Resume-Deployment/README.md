@@ -1,4 +1,4 @@
-# Landmark Technologies == Pause & Resume Deployments
+# Nfesta Technologies == Pause & Resume Deployments
 
 ## Step-00: Introduction
 - Why do we need Pausing & Resuming Deployments?
@@ -28,7 +28,7 @@ kubectl rollout pause deployment/<Deployment-Name>
 kubectl rollout pause deployment/my-first-deployment
 
 # Update Deployment - Application Version from V3 to V4
-kubectl set image deployment/my-first-deployment hello=mylandmarktech/hello:4 --record=true
+kubectl set image deployment/my-first-deployment hello=myNfestatech/hello:4 --record=true
 kubectl rollout pause deployment/my-first-deployment
 # Check the Rollout History of a Deployment
 kubectl rollout history deployment/my-first-deployment  
