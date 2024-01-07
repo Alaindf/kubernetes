@@ -3,7 +3,7 @@
 #
 
 variable "cluster-name" {
-  default = "eks-landmark"
+  default = "eks-nfesta"
   type    = string
 }
 variable "key_pair_name" {
