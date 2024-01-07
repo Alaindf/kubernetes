@@ -1,4 +1,4 @@
-# Landmark Technologies == Kubernetes Update Deployments
+# Nfesta Technologies == Kubernetes Update Deployments
 
 ## Step-00: Introduction
 - We can update deployments using two options
@@ -15,7 +15,7 @@ kubectl get deployment my-first-deployment -o yaml
 
 # Update Deployment - SHOULD WORK NOW
 kubectl set image deployment/<Deployment-Name> <Container-Name>=<Container-Image> --record=true
-kubectl set image deployment/my-first-deployment hello=mulandmarktech/hello:1 --record=true
+kubectl set image deployment/my-first-deployment hello=nfestatechnologies/hello:1 --record=true
 ```
 ### Verify Rollout Status (Deployment Status)
 - **Observation:** By default, rollout happens in a rolling update model, so no downtime.
@@ -87,12 +87,12 @@ kubectl edit deployment/my-first-deployment --record=true
 # Change From 2.0.0
     spec:
       containers:
-      - image: mylandmarktech/hello:2
+      - image: nfestatechnologies/hello:2
 
 # Change To 3.0.0
     spec:
       containers:
-      - image: mylandmarktech/hello:3
+      - image: nfestatechnologies/hello:3
 ```
 
 ### Verify Rollout Status
