@@ -1,4 +1,4 @@
-# Landmark Technologies == Kubernetes - Deployment
+# Nfesta Technologies == Kubernetes - Deployment
 
 ## Step-01: Introduction to Deployments
 - What is a Deployment?
@@ -10,11 +10,11 @@
 ## Step-02: Create Deployment
 - Create Deployment to rollout a ReplicaSet
 - Verify Deployment, ReplicaSet & Pods
-- **Docker Image Location:** https://hub.docker.com/repository/docker/mylandmarktech/hello
+- **Docker Image Location:** https://hub.docker.com/repository/docker/nfestatechnologies/hello
 ```
 # Create Deployment
 kubectl create deployment <Deplyment-Name> --image=<Container-Image>
-kubectl create deployment my-first-deployment --image=mylandmarktech/hello
+kubectl create deployment my-first-deployment --image=nfestatechnologies/hello
 
 # Verify Deployment
 kubectl get deployments
