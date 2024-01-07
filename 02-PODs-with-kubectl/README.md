@@ -1,4 +1,4 @@
-# Landmark Technologies  == Kubernetes  - PODs
+# Nfesta Technologies  == Kubernetes  - PODs
 
 ## Step-01: PODs Introduction
 - What is a POD ?
@@ -22,14 +22,14 @@ kubectl get nodes -o wide
 kubectl run <desired-pod-name> --image <Container-Image> --generator=run-pod/v1
 
 # Replace Pod Name, Container Image
-kubectl run my-first-pod --image mylandmarktech/hello --generator=run-pod/v1
+kubectl run my-first-pod --image nfestatechnologies/hello --generator=run-pod/v1
 ```
 - **Important Note:** Without **--generator=run-pod/v1** it will create a pod with a deployment which is another core kubernetes concept which we will learn in next few minutes. 
 - **Important Note:**
   - With **Kubernetes 1.18 version**, there is lot clean-up to **kubectl run** command.
   - The below will suffice to create a Pod as a pod without creating deployment. We dont need to add **--generator=run-pod/v1**
 ```
-kubectl run my-first-pod --image mylandmarktech/hello
+kubectl run my-first-pod --image nfestatechnologies/hello
 ```  
 
 ### List Pods
@@ -97,7 +97,7 @@ kubectl delete pod my-first-pod
 ```
 # Create  a Pod
 kubectl run <desired-pod-name> --image <Container-Image> --generator=run-pod/v1
-kubectl run my-first-pod --image mylandmarktech/hello:4 --generator=run-pod/v1
+kubectl run my-first-pod --image nfestatechnologies/hello:4 --generator=run-pod/v1
 
 # Expose Pod as a Service
 kubectl expose pod <Pod-Name>  --type=NodePort --port=80 --name=<Service-Name>
