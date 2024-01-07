@@ -3,7 +3,7 @@
 ### **Email: nfestatech@gmail.com**
 # nfesta Technologies,  -    nfesta Technologies 
 # Tel: +1 240 636 8212,   -     +1 240 636 8212 
-#    www.mynfestatech.com 
+#    www.nfestatech.com 
 # Terraform Installation And Setup In AWS EC2 Linux Instances
 #  Using Terraform to provision a fully managed Amazon EKS Cluster
 
