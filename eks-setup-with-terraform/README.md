@@ -17,12 +17,13 @@
    + Administrator Access
 + Attach IAM Role to EC2 Instance.
 
-### Install Terraform
+### Create an admin user to manage your terraform
 ```sh
 sudo adduser eksadmin
 sudo echo "eksadmin  ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/eksadmin
 sudo su - eksadmin
 ```
+### Install Terraform
 ``` sh
 $ git clone https://github.com/nfestaclass02/eks-terraform-setup
 $ cd eks-terraform-setup
