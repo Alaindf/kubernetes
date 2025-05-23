@@ -1,12 +1,18 @@
-#!/bin/bash
-# install terraform in ubuntu server
-sudo apt install wget unzip -y
-wget https://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.26_linux_amd64.zip
-sudo unzip terraform_0.12.26_linux_amd64.zip -d /usr/local/bin/
-#Export terraform binary path temporally
-export PATH=$PATH:/usr/local/bin
-#Add path permanently for current user.By Exporting path in .bashrc file at end of file.
- echo  "export PATH=$PATH:/usr/local/bin" >> ~/.bashrc
-# Source .bashrc to reflect for current session
- source ~/.bashrc 
- terraform -version
+# Provider Configuration
+#
+
+provider "aws" {
+  region  = "us-west-2"
+}
+
+# Using these data sources allows the configuration to be
+# generic for any region.
+data "aws_region" "current" {}
+
+data "aws_availability_zones" "available" {}
+
+# Not required: currently used in conjuction with using
+# icanhazip.com to determine local workstation external IP
+# to open EC2 Security Group access to the Kubernetes cluster.
+# See workstation-external-ip.tf for additional information.
+provider "http" {}
