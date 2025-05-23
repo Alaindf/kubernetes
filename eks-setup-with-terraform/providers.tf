@@ -2,7 +2,7 @@
 #
 
 provider "aws" {
-  region  = "us-west-2"
+  region  = "us-west-1"
 }
 
 # Using these data sources allows the configuration to be
